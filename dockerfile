@@ -9,7 +9,7 @@ RUN \
     apt-get install -y oracle-java8-installer;
 
 RUN \
-    apt-get install oracle-java8-set-default; \
+    # apt-get install oracle-java8-set-default; \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD ["/sbin/my_init"]
